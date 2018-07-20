@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <title>Give A GIF</title>
 </head>
 <body>
-    
+    <header><h1 class="display-4">Give A GIF</h1></header><br><br>
+    <div class="jumbotron">
+  
+  <p class="lead">Want to make someone's day?</p>
+  <hr class="my-4">
+  <p></p>
+  <p class="lead">
+      
+     
+    <button class="btn btn-default btn-md" role="button" onClick="GIF_api()">Find A GIF!</button>
+  </p>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="gif-display">
+            <h2 id='gif-name'></h2>
+            <p id ="gif-image"></p>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 </body>
 </html>
