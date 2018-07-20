@@ -1,33 +1,23 @@
-let commands = ["Funny", "Happy", "Sad", "Hilarious", "Crazy", "Angry", "Donald+Trump", "Vladmir+Putin", "Obama", "OMG", 'Cool', '400 Error'];
+let commands = ["Funny", "Happy", "Sad", "Hilarious", "Crazy", "Angry", "Donald+Trump", "Vladmir+Putin", "Obama", "OMG", 'Cool', '400+Error', 'cats', 'coding', 'typing', 'error+500'];
 let request = new XMLHttpRequest();
-
-
-function displayGIF(apiData) {
-    let dataFrom = JSON.parse(apiData);
-    document.getElementById('gif-name').innerHTML = 
-    dataFrom.name;
-}
 
 function displayGIFNicely(apiData) {
     let newData = JSON.parse(apiData);
-    console.log(newData);
-    // Call the GIF to display it in the HTML
-    let theGIF = "<div>" + newData.image + "</div>"
     
-
+    let data = newData.data[0].embed_url;
+    console.log(data);
     document.getElementById("gif-image").innerHTML =
-        theGIF;
+        // "&lt;embed src='" + data +  "'&gt;";
+        "<embed src='" + data +  "'>";
+        
 }
 
 request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         displayGIFNicely(this.responseText);
-        displayGIF(this.responseText);
         
     }
     else if (this.readyState == 4 && this.status == 404) {
-        document.getElementById("gif-name").innerHTML =
-            "YOUR GIF CAN'T BE GIVEN";
         
     }
 }
@@ -36,7 +26,7 @@ request.onreadystatechange = function() {
 // API KEY USING RANDOM GENERATOR FOR SEARCHED GIFS
 function GIF_api() {
     let search = commands[Math.floor(Math.random() * commands.length)]
-    request.open("GET", "https://api.giphy.com/v1/gifs/search?q=" + search + "&api_key=Gl6Y7qcw9IszNtwV61V1dcpagALOpGPH")
+    request.open("GET", "https://give-a-gif-haleyschafer.c9users.io:8080/gifs/" + search);
     request.send();
     return false;
 }
