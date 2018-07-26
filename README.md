@@ -1,8 +1,8 @@
-# THIS IS FOR EDUCATIONAL PURPOSES ONLY. THERE WILL BE NO COMMERCIAL USE OF THIS PRODUCT.
+#EDUCATIONAL PURPOSES ONLY.
 
-Give a GIF Class Project with RESTful APIs. Used with a GIPHY API. 
+Give a GIF Project with RESTful APIs. Used with a GIPHY API. 
 
 Created with the following GitHub users: 
-/mboladop
+/hschafer
 /Miguelmargar
  
