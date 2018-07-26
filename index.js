@@ -26,7 +26,7 @@ request.onreadystatechange = function() {
 // API KEY USING RANDOM GENERATOR FOR SEARCHED GIFS
 function GIF_api() {
     let search = commands[Math.floor(Math.random() * commands.length)]
-    request.open("GET", "https://give-a-gif-haleyschafer.c9users.io:8080/gifs/" + search);
+    request.open("GET", "https://mboladop-give-a-gif.herokuapp.com/gifs/" + search);
     request.send();
     return false;
 }
