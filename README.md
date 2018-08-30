@@ -10,7 +10,8 @@ Created with the following GitHub users:
 - /**hschafer**
 - /**Miguelmargar**
 - /**mboladop**
-Developed furyher by:
+
+Developed further by:
 - /**mboladop**
 
 ### How does it work
