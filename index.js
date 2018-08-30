@@ -1,6 +1,5 @@
 let commands = ["Funny", 'memes', 'friends', "Happy", "Sad", "Hilarious", "Crazy", "Angry", "Donald+Trump", "Vladmir+Putin", "Obama", "OMG", 'Cool', '400+Error', 'cats', 'dogs', 'coding', 'typing', 'error+500', 'harry+potter', 'coders', 'the+simpsons'];
 let request = new XMLHttpRequest();
-
 function displayGIFNicely(apiData) {
     let newData = JSON.parse(apiData);
     
@@ -10,7 +9,6 @@ function displayGIFNicely(apiData) {
         "<embed src='" + data +  "'>";
         
 }
-
 request.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         displayGIFNicely(this.responseText);
@@ -20,7 +18,6 @@ request.onreadystatechange = function() {
         
     }
 }
-
 // API KEY USING RANDOM GENERATOR FOR SEARCHED GIFS
 function GIF_api() {
     let search = commands[Math.floor(Math.random() * commands.length)]
