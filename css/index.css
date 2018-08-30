@@ -1,0 +1,67 @@
+h2 {
+    text-align: center;
+    font-family: interface, Helvetica Neue, helvetica, sans-serif;
+    font-size: 50px;
+    color: #ffffff;
+    margin: 0px;
+    padding: 10px 0px;
+    color: #000000;
+}
+strong{
+    letter-spacing: 12px;
+    font-size: 70px;
+}
+body {
+    background-image: url("https://media.istockphoto.com/videos/colourful-abstract-background-animation-with-lens-flares-video-id473345193?s=640x640");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%
+}
+.sponsored{
+    font-family: interface, Helvetica Neue, helvetica, sans-serif;;
+    color: white;
+}
+.bgsponsored{
+    background-color: black;
+}
+header{
+    width: 100%;
+    display: inline-block;
+}
+footer {
+    background-color: #000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+embed {
+    height: 400px;
+    width: 400px;
+    text-align: center;
+}
+.gif_container{
+    text-align: center;
+    padding: 10px 0px;
+}
+.container.top{
+    width:100%;
+    padding: 0px;
+}
+.btn.btn-default.btn-md{
+    border: 1px #000000 solid;
+    border-radius: 0;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.lead{
+    text-align: center;
+
+}
+i{
+    color: #ffffff;
+    padding: 10px 10px;
+}

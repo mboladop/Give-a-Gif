@@ -10,41 +10,35 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
-    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
     <title>Give A GIF</title>
 </head>
 
 <body>
-    
-   
-    <div class="jumbotron">
-        <div class="container">
-        <h1 class="display-4">Give A GIF</h1>
-        <hr class="my-4">
-        <p>Want to make someone's day?</p>
+        <header>
+            <h2>Give a <strong>GIF</strong></h2>
+        </header>
+        
+        <div class="container top">
         <p class="lead">
-
-
-            <button class="btn btn-default btn-md" role="button" onClick="GIF_api()">Find A GIF!</button>
+            <button class="btn btn-default btn-md" role="button" onClick="GIF_api()">Search!</button>
         </p>
         </div>
-    </div>
-    <div class="container">
+    
+    <div class="container gif_container">
         <div class="row">
-            <div id="gif-image">
-                
-                
-                
-            </div>
+            <div id="gif-image"></div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    
     <footer>
         <div class="row">
             <div class="col-sm-3">
-                
+                <a href="https://github.com/mboladop"><i class="fab fa-github fa-3x" ></i></a>
+                <a href="https://www.linkedin.com/in/luisa-bolado-pardo/"></a><i class="fab fa-linkedin-in fa-3x"></i></a>
             </div>
             <div class="col-sm-3">
                 
@@ -53,7 +47,7 @@
                 
             </div>
             <div class="col-sm-3">
-                <p><img src="footer.png" height= '50px' width= '180px'></img></p>
+                <a href="https://developers.giphy.com/"><p><img src="footer.png" height= '50px' width= '180px'></img></p></a>
             </div>
         </div>
     </footer>

@@ -1,11 +1,10 @@
-let commands = ["Funny", "Happy", "Sad", "Hilarious", "Crazy", "Angry", "Donald+Trump", "Vladmir+Putin", "Obama", "OMG", 'Cool', '400+Error', 'cats', 'coding', 'typing', 'error+500'];
+let commands = ["Funny", 'memes', 'friends', "Happy", "Sad", "Hilarious", "Crazy", "Angry", "Donald+Trump", "Vladmir+Putin", "Obama", "OMG", 'Cool', '400+Error', 'cats', 'dogs', 'coding', 'typing', 'error+500', 'harry+potter', 'coders', 'the+simpsons'];
 let request = new XMLHttpRequest();
 
 function displayGIFNicely(apiData) {
     let newData = JSON.parse(apiData);
     
     let data = newData.data[0].embed_url;
-    console.log(data);
     document.getElementById("gif-image").innerHTML =
         // "&lt;embed src='" + data +  "'&gt;";
         "<embed src='" + data +  "'>";
@@ -21,7 +20,6 @@ request.onreadystatechange = function() {
         
     }
 }
-
 
 // API KEY USING RANDOM GENERATOR FOR SEARCHED GIFS
 function GIF_api() {
