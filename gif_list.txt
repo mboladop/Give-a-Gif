@@ -1,6 +1,4 @@
-    
-    commands = [
-    "Funny",
+    commands = ["Funny",
     "memes",
     "friends",
     "Happy",
@@ -119,5 +117,4 @@
     "sea",
     "instacool",
     "goodmorning",
-    "iphoneonly"
-    ]
+    "iphoneonly"]
