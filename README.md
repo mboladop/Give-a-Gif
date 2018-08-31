@@ -6,6 +6,7 @@
 
 ### What is this website for?
 Give a GIF Project website was created for fun during a hackaton in Code Institute.
+
 Created with the following GitHub users: 
 - /**hschafer**
 - /**Miguelmargar**

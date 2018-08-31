@@ -1,4 +1,5 @@
-    commands = ["Funny",
+const gif_list = [
+    "Funny",
     "memes",
     "friends",
     "Happy",
@@ -117,4 +118,5 @@
     "sea",
     "instacool",
     "goodmorning",
-    "iphoneonly"]
+    "iphoneonly"
+  ];
