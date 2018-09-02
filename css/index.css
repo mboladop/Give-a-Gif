@@ -50,12 +50,15 @@ embed {
     width:100%;
     padding: 0px;
 }
-.btn.btn-default.btn-md{
-    border: 1px #000000 solid;
-    border-radius: 0;
-    padding: 10px;
+.btn{
+    border-radius: 15px;
+    padding: 10px 20px;
     font-weight: bold;
     margin-top: 20px;
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    font-family: interface, Helvetica Neue, helvetica, sans-serif !important;
+    letter-spacing: 3px;
 }
 .lead{
     text-align: center;
